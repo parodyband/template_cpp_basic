@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (Windows)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/my_project.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": false,
+      "preLaunchTask": "CMake Build"
+    },
+    {
+      "name": "Debug (macOS/Linux)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/my_project",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": false,
+      "preLaunchTask": "CMake Build"
+    }
+  ]
+}
