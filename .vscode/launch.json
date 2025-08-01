@@ -5,21 +5,41 @@
       "name": "Debug (Windows)",
       "type": "lldb",
       "request": "launch",
-      "program": "${workspaceFolder}/build/my_project.exe",
+      "program": "${workspaceFolder}/build/debug/my_project.exe",
       "args": [],
       "cwd": "${workspaceFolder}",
       "stopOnEntry": false,
-      "preLaunchTask": "CMake Build"
+      "preLaunchTask": "Build (Debug)"
+    },
+    {
+      "name": "Launch (Windows, Release)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/release/my_project.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": false,
+      "preLaunchTask": "Build (Release)"
     },
     {
       "name": "Debug (macOS/Linux)",
       "type": "lldb",
       "request": "launch",
-      "program": "${workspaceFolder}/build/my_project",
+      "program": "${workspaceFolder}/build/debug/my_project",
       "args": [],
       "cwd": "${workspaceFolder}",
       "stopOnEntry": false,
-      "preLaunchTask": "CMake Build"
+      "preLaunchTask": "Build (Debug)"
+    },
+    {
+      "name": "Launch (macOS/Linux, Release)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/release/my_project",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": false,
+      "preLaunchTask": "Build (Release)"
     }
   ]
 }
