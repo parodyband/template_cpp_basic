@@ -19,5 +19,5 @@ This template is configured to use the g++ compiler. For the VS Code linter (`cl
 
 2.  **Build The Project:**
     ```
-    Press f5 or ctrl f5. It should prompt you to choose a target (windows or mac)
+    Press f5 or ctrl f5. It should prompt you to choose a target (windows or mac). You can build and configure the project for release and debug.
     ```
